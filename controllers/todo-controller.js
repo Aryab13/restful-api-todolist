@@ -1,5 +1,5 @@
-const Todo = require("../models/todos");
-const User = require("../models/users");
+const Todo = require("../models/todo");
+const User = require("../models/user");
 
 module.exports = {
   getAllTodo: async (req, res) => {
