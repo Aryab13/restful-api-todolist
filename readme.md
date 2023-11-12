@@ -19,7 +19,7 @@ $ npm install bcrypt
 $ npm i jsonwebtoken
 ```
 
-Pada package.json bagian script tambahkan:
+Tambahkan kode pada package.json
 
 ```javascript
 {
@@ -33,7 +33,7 @@ Pada package.json bagian script tambahkan:
 
 ---
 
-Membuat server pada file app.js, tulis kode berikut
+Buat server di app.js
 
 ```javascript
 const express = require("express");
@@ -46,18 +46,16 @@ app.listen(PORT, () => {
 });
 ```
 
-Untuk memulai menjalankan kode, gunakan
+Jalankan kode
 
 ```markdown
 $ npm start
 $ npm run dev
 ```
 
-Server berhasil dibuat.
-
 ---
 
-Installation Sequelize dan drive database.
+Install Sequelize
 
 ```markdown
 Instal Sequelize :
@@ -68,12 +66,9 @@ $ npm install --save-dev sequelize-cli
 
 Initialisasi CLI :
 $ npx sequelize-cli init
-
-Installing drive database :
-$ npm isntall --save mysql
 ```
 
-Setting untuk melakukan koneksi pada database.
+Lakukan koneksi ke database
 
 ```javascript
 const { Sequelize } = require("sequelize");
@@ -88,7 +83,7 @@ const sequelize = new Sequelize({
 });
 ```
 
-Melakukan testing terhadap koneksi.
+Testing koneksi
 
 ```javascript
 try {
